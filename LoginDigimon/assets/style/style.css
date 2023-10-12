@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Visitor1';
+    /*Visitor1 */
+    src: url('../fonts/visitor1.ttf') format('truetype');
+    /* Ruta a visitor1.ttf */
+}
+
+@font-face {
+    font-family: 'Visitor2';
+    /* Visitor2 */
+    src: url('../fonts/visitor1.ttf') format('truetype');
+    /* Ruta a visitor2.ttf */
+}
+
+body {
+    font-family: 'Visitor1', sans-serif;
+    /* Aquí aplicamos la fuente personalizada a todo el cuerpo del documento, y 'sans-serif' como alternativa si la fuente no está disponible. */
+}
+
+
+/* Estilos existentes para el fondo */
+.users {
+    background-color: rgb(26, 163, 255);
+    background-image: url("../img/imagen_index/background-Users.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Estilos para las imágenes */
+img {
+    filter: brightness(50%);
+    filter: drop-shadow(0 0 0.75rem crimson);
+    filter: drop-shadow(16px 16px 10px black);
+}
+
+/* Estilos adicionales para centrar el logotipo */
+#logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+}
+
+/* Estilos adicionales para el título "Sign into your account" */
+h5 {
+    font-size: 1.5rem;
+}
+
+/* Estilos adicionales para los campos de entrada de texto */
+.form-control {
+    border-radius: 1rem;
+}
+
+/* Estilos adicionales para los botones de inicio de sesión y salida */
+.btn-dark {
+    background-color: #ff6219;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+}
+
+/* Estilos adicionales para los vínculos "Terms of use" y "Privacy policy" */
+.small.text-muted {
+    margin-top: 10px;
+}
+
+/* Estilos adicionales para el primer div dentro del formulario */
+div:first-of-type {
+    padding-top: 4%;
+}
+.form-control {
+    border: 2px solid #ff6219;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+/* Estilo para los campos de entrada de texto cuando tienen foco (clicados) */
+.form-control:focus {
+    border-color: rgb(26, 163, 255); /* Cambia el color del borde cuando el campo tiene foco */
+}
